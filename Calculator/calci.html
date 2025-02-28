@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIMPLE CALCULATOR</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>CALCULATOR</h1>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                <div class="display">
+                    <input type="text" id="output">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="document.getElementById('output').value = ''">
+                    <input type="button" value="DE" onclick="document.getElementById('output').value = document.getElementById('output').value.slice(0, -1)">
+                    <input type="button" value="("  onclick="document.getElementById('output').value += '('">
+                    <input type="button" value=")"  onclick="document.getElementById('output').value += ')'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="document.getElementById('output').value += '7'">
+                    <input type="button" value="8" onclick="document.getElementById('output').value += '8'">
+                    <input type="button" value="9" onclick="document.getElementById('output').value += '9'">
+                    <input type="button" value="/" onclick="document.getElementById('output').value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="document.getElementById('output').value += '4'">
+                    <input type="button" value="5" onclick="document.getElementById('output').value += '5'">
+                    <input type="button" value="6" onclick="document.getElementById('output').value += '6'">
+                    <input type="button" value="*" onclick="document.getElementById('output').value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="document.getElementById('output').value += '1'">
+                    <input type="button" value="2" onclick="document.getElementById('output').value += '2'">
+                    <input type="button" value="3" onclick="document.getElementById('output').value += '3'">
+                    <input type="button" value="-" onclick="document.getElementById('output').value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="document.getElementById('output').value += '0'">
+                    <input type="button" value="." onclick="document.getElementById('output').value += '.'">
+                    <input type="button" value="=" onclick="try { document.getElementById('output').value=eval(document.getElementById('output').value)}catch{document.getElementById('output').value='Error'}">                    
+                    <input type="button" value="+" onclick="document.getElementById('output').value += '+'">
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

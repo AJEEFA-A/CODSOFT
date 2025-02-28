@@ -1,0 +1,46 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    color: aliceblue;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    background-color: seagreen;
+}
+.container {
+    padding: 50px;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+}
+.calculator {
+    padding: 10px;
+    background-color: black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    margin: 0;
+    background-color: rgba(5, 134, 104, 0.151);
+    width: 50px;
+    height: 50px;
+    color: rgb(225, 11, 11);
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(5, 134, 104, 0.151);
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    
+}
+form .display input{
+    text-align: right;
+    font-size: medium;
+    flex: 1;
+}
+
+
